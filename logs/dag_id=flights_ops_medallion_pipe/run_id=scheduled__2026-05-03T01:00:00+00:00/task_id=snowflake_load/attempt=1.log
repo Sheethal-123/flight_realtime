@@ -1,0 +1,18 @@
+[2026-05-03T02:10:31.845+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-05-03T02:10:31.924+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: flights_ops_medallion_pipe.snowflake_load scheduled__2026-05-03T01:00:00+00:00 [queued]>
+[2026-05-03T02:10:31.943+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: flights_ops_medallion_pipe.snowflake_load scheduled__2026-05-03T01:00:00+00:00 [queued]>
+[2026-05-03T02:10:31.945+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-05-03T02:10:31.971+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): snowflake_load> on 2026-05-03 01:00:00+00:00
+[2026-05-03T02:10:32.008+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'flights_ops_medallion_pipe', 'snowflake_load', 'scheduled__2026-05-03T01:00:00+00:00', '--job-id', '377', '--raw', '--subdir', 'DAGS_FOLDER/flight-pipeline.py', '--cfg-path', '/tmp/tmp27j9d8ti']
+[2026-05-03T02:10:32.014+0000] {standard_task_runner.py:91} INFO - Job 377: Subtask snowflake_load
+[2026-05-03T02:10:32.020+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=13167) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-05-03T02:10:32.022+0000] {standard_task_runner.py:64} INFO - Started process 13178 to run task
+[2026-05-03T02:10:32.164+0000] {task_command.py:426} INFO - Running <TaskInstance: flights_ops_medallion_pipe.snowflake_load scheduled__2026-05-03T01:00:00+00:00 [running]> on host b5a862a7c6f4
+[2026-05-03T02:25:54.956+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 377 for task snowflake_load ((psycopg2.OperationalError) connection to server at "postgres" (172.18.0.4), port 5432 failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8); 13178)
+[2026-05-03T02:25:55.328+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-05-03T02:25:55.482+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-05-03T02:25:55.490+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../data"
+		},
+		{
+			"path": "../logs"
+		},
+		{
+			"path": "../plugins"
+		},
+		{
+			"path": "../scripts"
+		}
+	]
+}
