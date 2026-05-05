@@ -1,24 +1,24 @@
-# ✈️ Flight Data Medallion Pipeline — Airflow + Snowflake + Native Streamlit
+# Flight Data Medallion Pipeline — Airflow + Snowflake + Native Streamlit
 
 A cloud-native data engineering pipeline that ingests real-time flight data, processes it using Medallion Architecture (Bronze → Silver → Gold), stores it in Snowflake, and visualizes insights using a **Streamlit app running directly inside Snowflake**.
 
 ---
 
-## 🚀 Project Overview
+## Project Overview
 
 This project demonstrates a **modern data stack used in industry**:
 
-* 🌐 Real-time ingestion from OpenSky API
-* 🧱 Medallion Architecture (Bronze → Silver → Gold)
-* 🔄 Workflow orchestration using Apache Airflow
-* ❄️ Cloud data warehouse using Snowflake
-* 📊 Native analytics using **Streamlit in Snowflake**
+* Real-time ingestion from OpenSky API
+* Medallion Architecture (Bronze → Silver → Gold)
+* Workflow orchestration using Apache Airflow
+* Cloud data warehouse using Snowflake
+* Native analytics using **Streamlit in Snowflake**
 
-👉 Built as a **production-style analytics system**
+ Built as a **production-style analytics system**
 
 ---
 
-## 🧠 Key Features
+## Key Features
 
 * ✅ Automated ETL pipeline (Airflow DAG)
 * ✅ Structured data layers (Bronze → Silver → Gold)
@@ -29,13 +29,13 @@ This project demonstrates a **modern data stack used in industry**:
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ![Architecture](assets/architecture.png)
 
 ---
 
-## 🔄 Pipeline Flow
+## Pipeline Flow
 
 ```text
 OpenSky API
@@ -53,7 +53,7 @@ Streamlit App (inside Snowflake)
 
 ---
 
-## 📊 Snowflake Native Streamlit Dashboard
+## Snowflake Native Streamlit Dashboard
 
 The dashboard is built using **Streamlit inside Snowflake**, which allows:
 
@@ -63,19 +63,19 @@ The dashboard is built using **Streamlit inside Snowflake**, which allows:
 
 ---
 
-### 🔹 Dashboard Preview
+### Dashboard Preview
 
 ![Dashboard](assets/dashboard1.png)
 
 ---
 
-### 🔹 Flight Analytics
+### Flight Analytics
 
 ![Charts](assets/dashboard2.png)
 
 ---
 
-### 🔹 Insights
+### Insights
 
 ![Insights](assets/dashboard3.png)
 
@@ -87,14 +87,14 @@ The dashboard is built using **Streamlit inside Snowflake**, which allows:
 
 ## 📈 Example Insights
 
-* 🌍 Top countries by flight volume
-* ⚡ Fastest countries by average velocity
-* 🛬 Grounded aircraft distribution
-* 📊 Flight trends over time
+* Top countries by flight volume
+* Fastest countries by average velocity
+* Grounded aircraft distribution
+* Flight trends over time
 
 ---
 
-## ⚙️ DAG Details
+## DAG Details
 
 * **DAG ID:** `flights_ops_medallion_pipe`
 * **Schedule:** Every 30 minutes
@@ -120,7 +120,7 @@ The dashboard is built using **Streamlit inside Snowflake**, which allows:
 
 ---
 
-## ❄️ Snowflake Integration
+## Snowflake Integration
 
 * Data stored in:
 
@@ -135,7 +135,7 @@ FLIGHTS.FLIGHTS_SCHEMA.FLIGHT_TABLE
 
 ---
 
-## ▶️ How to View the Dashboard
+## How to View the Dashboard
 
 1. Open Snowflake UI
 2. Navigate to:
@@ -150,7 +150,7 @@ Projects → Streamlit Apps
 Flights_Database Dashboard
 ```
 
-👉 The Streamlit app runs **inside Snowflake (no local execution required)**
+The Streamlit app runs **inside Snowflake (no local execution required)**
 
 ---
 
@@ -183,7 +183,7 @@ Flights_Database Dashboard
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Category      | Tools                        |
 | ------------- | ---------------------------- |
@@ -197,7 +197,7 @@ Flights_Database Dashboard
 
 ---
 
-## ▶️ Running the Pipeline
+## Running the Pipeline
 
 ```bash
 docker-compose up
@@ -211,7 +211,7 @@ http://localhost:8080
 
 ---
 
-## 🎯 Why This Project Stands Out
+## Why This Project Stands Out
 
 * End-to-end data engineering pipeline
 * Medallion architecture implementation
@@ -219,7 +219,7 @@ http://localhost:8080
 * Real-time data processing
 * Production-style system design
 
-👉 Mirrors **real-world data platforms used in companies**
+Mirrors **real-world data platforms used in companies**
 
 
 
